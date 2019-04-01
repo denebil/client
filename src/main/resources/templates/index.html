@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Bitcoin alerts</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Form</h1>
+<form action="#" th:action="@{/addAlert}" th:object="${alert}" method="post">
+    <p>Currency pair: <input type="text" th:field="*{pair}" /></p>
+    <p>Limit: <input type="number" th:field="*{limit}" /></p>
+    <p><input type="submit" name="action" value="Add/Set" /></p>
+    <p><input type="submit" name="action" value="Delete" /></p>
+</form>
+</body>
+</html>
